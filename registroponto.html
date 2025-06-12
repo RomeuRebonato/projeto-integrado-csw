@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Ponto</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+     h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .formulario {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .caixa {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 0.2rem;
+    }
+
+    input {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      align-self: center;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background-color: #1f3e31;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #162e24;
+    }
+
+    @media (max-width: 600px) {
+      .formulario {
+        flex-direction: column;
+      }
+    }
+    </style>
+</head>
+<body>
+ <header class="menu-coop">
+  <img src="./imagens/logo.jpg" alt="Recicla Fácil" class="logo" />
+
+  <nav class="nav-links-coop">
+    <a href="./registroponto.html" class="menu-button">
+      <span> Registrar Ponto</span>
+      <img src="./imagens/ponto-coleta.png" alt="icone ponto-coleta" />
+    </a>
+    <a href="login.html" class="menu-button perfil">
+      <img src="./imagens/perfil.jpg" alt="icone perfil" />
+    </a>
+  </nav>
+</header>
+ <section class="conteudo">
+    <h1>Sobre o Ponto de coleta</h1>
+    <form novalidate onsubmit="return validarformulario()">
+  <div class="formulario">
+    <div class="caixa">
+      <label for="nome">Nome do ponto</label>
+      <input type="text" id="nome" name="nome" required />
+    </div>
+    <div class="caixa">
+      <label for="horario">Horário de funcionamento</label>
+      <input type="text" id="horario" name="horario" required />
+    </div>
+  </div>
+
+  <h2>Endereço do ponto de coleta</h2>
+
+  <div class="formulario">
+    <div class="caixa">
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" name="cep" required />
+    </div>
+    <div class="caixa">
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" required />
+    </div>
+    <div class="caixa">
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" name="bairro" required />
+    </div>
+  </div>
+
+  <div class="formulario">
+    <div class="caixa">
+      <label for="rua">Rua</label>
+      <input type="text" id="rua" name="rua" required />
+    </div>
+    <div class="caixa">
+      <label for="numero">Número</label>
+      <input type="text" id="numero" name="numero" required />
+    </div>
+  </div>
+
+  <button type="submit">Registrar ponto</button>
+</form>
+ </section>
+ <script src="script.js"></script>
+</body>
+</html>

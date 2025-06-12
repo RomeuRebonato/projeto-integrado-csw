@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos de coleta</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="menu-coop">
+  <img src="./imagens/logo.jpg" alt="Recicla Fácil" class="logo" />
+
+  <nav class="nav-links-coop">
+    <a href="./pontocoleta.html" class="menu-button">
+      <span>Pontos de coleta</span>
+      <img src="./imagens/ponto-coleta.png" alt="icone ponto-coleta" />
+    </a>
+    <a href="./residuosdisponiveis.html" class="menu-button">
+      <span>Resíduos disponíveis</span>
+      <img src="./imagens/disponiveis.png" alt="icone residuos disponiveis" />
+    </a>
+    <a href="./notificacao.html" class="menu-button">
+      <span>Notificações</span>
+      <img src="./imagens/notificacao.png" alt="Ícone Notificação" />
+    </a>
+    <a href="./premio.html" class="menu-button destaque">
+      <span>Resgate prêmios</span>
+      <img src="./imagens/premio.png" alt="icone premio" />
+    </a>
+    <a href="login.html" class="menu-button perfil">
+      <img src="./imagens/perfil.jpg" alt="icone perfil" />
+    </a>
+  </nav>
+</header>
+<section class="form-container">
+    <h1>Sua localização</h1>
+    <form onsubmit="return validarendereco()">
+      <div class="espacocaixas">
+        <div class="input-box">
+          <label for="cep">CEP</label>
+          <input type="number" id="cep" name="cep" required />
+         
+        </div>
+
+        <div class="input-box">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" required />
+        </div>
+
+        <div class="input-box">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" required />
+        </div>
+      </div>
+
+      <div class="espacocaixas">
+        <div class="input-box">
+          <label for="rua">Rua</label>
+          <input type="text" id="rua" name="rua" required />
+        </div>
+
+        <div class="input-box">
+          <label for="numero">Número</label>
+          <input type="number" id="numero" name="numero" required />
+        </div>
+      </div>
+
+      <button onclick="validarEndereco()" type="submit" class="btn-buscar">
+        🔍
+      </button>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

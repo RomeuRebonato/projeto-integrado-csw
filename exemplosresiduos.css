@@ -1,0 +1,125 @@
+  * {
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #3d6b57;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      margin: 0 auto;
+      font-size: 1.8rem;
+    }
+
+    .botao-voltar {
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .imagens {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .imagens img {
+      width: 100%;
+      max-width: 250px;
+      border: 1px solid #aaa;
+    }
+
+    .thumbs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .thumbs img {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #aaa;
+    }
+
+    .right {
+      flex: 2;
+      min-width: 280px;
+    }
+
+    .box {
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .box h2 {
+      margin: 0 0 5px 0;
+      font-size: 1.2rem;
+    }
+
+    .km {
+      float: right;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .rotas-botao {
+      background-color: #123d34;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 5px 12px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .desc {
+      margin-bottom: 20px;
+    }
+
+    .confirmar-btn {
+      background-color: #123d34;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 24px;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .confirmar-btn {
+        margin: 0 auto;
+      }
+    }

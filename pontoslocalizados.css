@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./tipografia/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  background-color: #fff;
+}
+
+.muitos-pontos {
+  background-color: #3d6e59;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.muitos-pontos .voltar {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.pontos-lista {
+  padding: 20px;
+}
+
+.ponto {
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info h2 {
+    font-family: "Montserrat";
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+}
+
+.info p {
+    font-family: 'Montserrat';
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.distancia {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
+.acoes {
+  margin-top: 8px;
+}
+.acoes a {
+  background-color: #2c4d3b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.acoes a:hover {
+  background-color: #1e3829;
+}
+.acoes button {
+  background-color: #2c4d3b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.acoes button:hover {
+  background-color: #1e3829;
+}
+
+
+@media (max-width: 600px) {
+  .ponto {
+    flex-direction: column;
+  }
+
+  .distancia {
+    align-self: flex-end;
+    margin-top: 12px;
+  }
+}

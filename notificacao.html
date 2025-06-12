@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="menu-coop">
+  <img src="./imagens/logo.jpg" alt="Recicla Fácil" class="logo" />
+
+  <nav class="nav-links-coop">
+    <a href="./pontocoleta.html" class="menu-button">
+      <span>Pontos de coleta</span>
+      <img src="./imagens/ponto-coleta.png" alt="icone ponto-coleta" />
+    </a>
+    <a href="./residuosdisponiveis.html" class="menu-button">
+      <span>Resíduos disponíveis</span>
+      <img src="./imagens/disponiveis.png" alt="icone residuos disponiveis" />
+    </a>
+    <a href="./notificacao.html" class="menu-button">
+      <span>Notificações</span>
+      <img src="./imagens/notificacao.png" alt="Ícone Notificação" />
+    </a>
+    <a href="./premio.html" class="menu-button destaque">
+      <span>Resgate prêmios</span>
+      <img src="./imagens/premio.png" alt="icone premio" />
+    </a>
+    <a href="login.html" class="menu-button perfil">
+      <img src="./imagens/perfil.jpg" alt="icone perfil" />
+    </a>
+  </nav>
+</header>
+
+<section class="form-container">
+     <div class="coluna">
+      <h3>Não lidas</h3>
+      <div class="notificacao">Assunto noti 1</div>
+      <div class="notificacao">Assunto noti 2</div>
+      <div class="notificacao">Assunto noti 3</div>
+      <div class="notificacao">Assunto noti 4</div>
+      <div class="assuntos-noti">
+        <button onclick="alert('Notificações marcadas como lidas')">Marcar como lidas</button>
+      </div>
+    </div>
+
+  
+    <div class="coluna">
+      <h3>Já lidas</h3>
+      <div class="notificacao">Assunto noti 5</div>
+      <div class="notificacao">Assunto noti 6</div>
+      <div class="notificacao">Assunto noti 7</div>
+      <div class="notificacao">Assunto noti 8</div>
+      <div class="assuntos-noti" style="justify-content: flex-end;">
+        <button onclick="alert('Notificações limpas')">Limpar</button>
+      </div>
+    </div>
+    </section>
+</body>
+</html>

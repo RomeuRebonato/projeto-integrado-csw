@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./tipografia/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3C6E57;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+ 
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+}
+
+.form-login label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.form-login input {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.senha-opcoes {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px;
+  font-size: 0.9rem;
+  color: #fdec00;
+}
+
+.cadeado {
+  margin-right: 5px;
+}
+
+.senha-opcoes a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.senha-opcoes a:hover {
+  text-decoration: underline;
+}
+
+.form-login button {
+  background-color: #2d4739;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.caixa-login {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #4caf50;  
+  border-radius: 8px;
+  background-color: #f8e808;   
+  color: #333333;              
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-login button:hover {
+  background-color: #3b5e4a;
+}
+
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .form-login input {
+    font-size: 0.95rem;
+  }
+
+  .form-login button {
+    font-size: 1rem;
+  }
+}

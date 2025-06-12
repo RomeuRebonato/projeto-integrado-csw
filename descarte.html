@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Descarte</title>
+  <link rel="stylesheet" href="descarte.css">
+  
+</head>
+<body>
+  <header>
+    <a href="pontoslocalizados.html">&#8592;</a>
+    <h1>Registro de descarte</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tipo de resíduo</h2>
+      <p class="obrigatorio">*Campo obrigatório</p>
+      <input type="text" id="tipo-residuo" class="input-tipo" required placeholder="Ex: Plástico, Papel, Metal..." />
+    <button class="botao-sugestoes"></button>
+    </section>
+
+    <section>
+      <h2>Quantidade de resíduo</h2>
+      <p class="obrigatorio">*Campo obrigatório</p>
+      <input type="text" id="quantidade-residuo" required placeholder="Ex: 2kg, 10 unidades..." />
+    </section>
+
+    <button class="botao-confirmar" onclick="confirmarRegistro()">Confirmar Registro</button>
+  </main>
+
+  <script src="descarte.js"></script>
+</body>
+</html>
